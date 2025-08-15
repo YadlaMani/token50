@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@buildwithsygma/sygma-sdk-core": "^2.11.2",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-progress": "^1.1.7",
@@ -27,6 +28,7 @@
     "react-dom": "19.0.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
+    "thirdweb": "^5.105.33",
     "viem": "^2.31.3",
     "wagmi": "^2.12.31"
   },
