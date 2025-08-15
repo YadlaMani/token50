@@ -1,18 +1,12 @@
 "use client";
-import {
-  createThirdwebClient,
-  getContract,
-  prepareContractCall,
-  sendTransaction,
-} from "thirdweb";
+import client from "@/utils/client";
+import { getContract, prepareContractCall, sendTransaction } from "thirdweb";
 import { privateKeyToAccount } from "thirdweb/wallets/private-key";
 
 import { defineChain } from "thirdweb/chains";
 import { useAppKitAccount } from "@reown/appkit/react";
 import { Button } from "@/components/ui/button";
-export const client = createThirdwebClient({
-  clientId: process.env.NEXT_PUBLIC_THIRDWEB_CLIENT_ID!,
-});
+
 const contract = getContract({
   client,
   chain: defineChain(43113),

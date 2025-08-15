@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import "./globals.css";
 import ContextProvider from "@/context";
 import { ConnectButton } from "@/components/ConnectButton";
+import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: "AVAX50 Token | Free Token Claim",
   description:
@@ -44,6 +45,7 @@ export default async function RootLayout({
         <ContextProvider cookies={cookies}>
           {" "}
           <ConnectButton />
+          <Toaster />
           {children}
         </ContextProvider>
       </body>

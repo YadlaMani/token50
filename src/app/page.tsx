@@ -1,4 +1,4 @@
-import { ConnectButton } from "@/components/ConnectButton";
+
 import TokenOperations from "../components/TokenOperations";
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 Avalanche Fuji
               </div>
-              <ConnectButton />
+             
             </div>
           </div>
         </div>
