@@ -72,3 +72,33 @@
     @apply font-heading;
   }
 }
+
+@layer utilities {
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+  }
+  
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+  
+  .brutalism-hover {
+    @apply transition-all duration-200 hover:translate-x-1 hover:translate-y-1 hover:shadow-none;
+  }
+  
+  .brutalism-card {
+    @apply border-4 border-border bg-secondary-background rounded-base shadow-shadow;
+  }
+  
+  .brutalism-button {
+    @apply px-4 py-2 border-2 border-border rounded-base shadow-shadow font-base transition-all duration-200 hover:translate-x-1 hover:translate-y-1 hover:shadow-none;
+  }
+}
