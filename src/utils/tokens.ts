@@ -1,4 +1,4 @@
-[
+export const tokens = [
   {
     contractAddress: "0xa8ad8ff707681F5AD60b2c9157a43F8D7e3a9243",
     tokenName: "Charizard",
