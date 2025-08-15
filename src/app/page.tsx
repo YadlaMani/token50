@@ -1,11 +1,8 @@
-
-import TokenOperations from "../components/TokenOperations";
+import { ConnectButton } from "@/components/ConnectButton";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground relative overflow-hidden flex flex-col items-center">
-      
-
+    <div className="min-h-screen bg-background text-foreground">
       <header className="sticky z-50 border-b border-border/20 bg-background/70 backdrop-blur-xl w-full">
         <div className="max-w-4xl w-full mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -29,16 +26,11 @@ export default function Home() {
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 Avalanche Fuji
               </div>
-             
+              <ConnectButton />
             </div>
           </div>
         </div>
       </header>
-
-      <section className="pb-20 w-full mx-auto">
-        <TokenOperations />
-      </section>
-
     </div>
   );
 }
